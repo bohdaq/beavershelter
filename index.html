@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Schronisko dla Bobrów Oli</title>
+  <meta name="description" content="Schronisko dla Bobrów Oli – ratujemy, leczymy i wypuszczamy na wolność ranne i osierocone bobry. Poznaj naszych podopiecznych i dowiedz się, jak możesz pomóc.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Przejdź do treści</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#start">
+        <img src="assets/logo.svg" alt="" width="44" height="44">
+        <span>Schronisko dla Bobrów <strong>Oli</strong></span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav" aria-label="Otwórz menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#podopieczni">Podopieczni</a></li>
+          <li><a href="#pomoc">Jak pomóc</a></li>
+          <li><a href="#wizyty">Wizyty</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#kontakt" class="btn btn-small">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="start" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Ratujemy · Leczymy · Wypuszczamy</p>
+          <h1>Bezpieczna przystań dla bobrów w potrzebie</h1>
+          <p class="lead">
+            Schronisko dla Bobrów Oli to miejsce, w którym ranne, chore i osierocone bobry
+            odzyskują siły, zanim wrócą tam, gdzie ich miejsce – nad rzekę.
+          </p>
+          <div class="hero-actions">
+            <a href="#pomoc" class="btn">Wesprzyj nas</a>
+            <a href="#podopieczni" class="btn btn-ghost">Poznaj bobry</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <svg viewBox="0 0 400 320" class="scene">
+            <defs>
+              <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#fdf3df"/>
+                <stop offset="1" stop-color="#f6e2bd"/>
+              </linearGradient>
+              <linearGradient id="water" x1="0" x2="0" y1="0" y2="1">
+                <stop offset="0" stop-color="#6fa7b5"/>
+                <stop offset="1" stop-color="#3f7685"/>
+              </linearGradient>
+            </defs>
+            <rect width="400" height="320" rx="28" fill="url(#sky)"/>
+            <circle cx="320" cy="70" r="30" fill="#f4c46a"/>
+            <path d="M0 170 Q60 120 120 160 T240 150 T400 140 V320 H0Z" fill="#9dbf8f"/>
+            <path d="M0 200 Q80 170 160 195 T400 185 V320 H0Z" fill="#7ea56f"/>
+            <!-- drzewa -->
+            <g fill="#3f6b3a">
+              <path d="M40 190 l18 -60 l18 60z"/>
+              <path d="M70 195 l14 -45 l14 45z"/>
+              <path d="M350 180 l16 -55 l16 55z"/>
+            </g>
+            <!-- rzeka -->
+            <path d="M0 240 Q100 220 200 238 T400 232 V320 H0Z" fill="url(#water)"/>
+            <path d="M40 270 h50 M150 285 h70 M270 268 h60" stroke="#cfe6ea" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+            <!-- tama -->
+            <g stroke="#5a3b22" stroke-width="8" stroke-linecap="round">
+              <line x1="215" y1="236" x2="300" y2="222"/>
+              <line x1="220" y1="226" x2="305" y2="214"/>
+              <line x1="228" y1="216" x2="296" y2="206"/>
+            </g>
+            <!-- bóbr -->
+            <g transform="translate(120 150)">
+              <ellipse cx="78" cy="78" rx="30" ry="12" fill="#5a3b22" transform="rotate(-15 78 78)"/>
+              <ellipse cx="40" cy="70" rx="34" ry="28" fill="#8b5a2b"/>
+              <circle cx="40" cy="32" r="26" fill="#9c6634"/>
+              <circle cx="20" cy="12" r="7" fill="#7a4d24"/>
+              <circle cx="60" cy="12" r="7" fill="#7a4d24"/>
+              <ellipse cx="40" cy="44" rx="14" ry="10" fill="#c99566"/>
+              <circle cx="30" cy="28" r="3.6" fill="#1d140c"/>
+              <circle cx="50" cy="28" r="3.6" fill="#1d140c"/>
+              <ellipse cx="40" cy="38" rx="5" ry="3.2" fill="#2b1a0e"/>
+              <rect x="36" y="46" width="4" height="8" rx="1" fill="#fff4dc"/>
+              <rect x="40" y="46" width="4" height="8" rx="1" fill="#fff4dc"/>
+              <!-- gałązka -->
+              <line x1="4" y1="60" x2="78" y2="52" stroke="#6b4a2a" stroke-width="5" stroke-linecap="round"/>
+              <ellipse cx="70" cy="46" rx="7" ry="4" fill="#5d9450" transform="rotate(-30 70 46)"/>
+              <ellipse cx="12" cy="54" rx="7" ry="4" fill="#5d9450" transform="rotate(20 12 54)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATYSTYKI -->
+    <section class="stats" aria-label="Nasze osiągnięcia">
+      <div class="container stats-grid">
+        <div class="stat"><span class="stat-num" data-count="148">0</span><span class="stat-label">uratowanych bobrów</span></div>
+        <div class="stat"><span class="stat-num" data-count="112">0</span><span class="stat-label">wypuszczonych na wolność</span></div>
+        <div class="stat"><span class="stat-num" data-count="9">0</span><span class="stat-label">lat działalności</span></div>
+        <div class="stat"><span class="stat-num" data-count="60">0</span><span class="stat-label">wolontariuszy</span></div>
+      </div>
+    </section>
+
+    <!-- O NAS -->
+    <section id="o-nas" class="section">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">O nas</p>
+          <h2>Wszystko zaczęło się od jednego małego bobra</h2>
+          <p>
+            Kilka lat temu Ola znalazła nad brzegiem rzeki wychłodzone, osierocone bobrzątko.
+            Nikt w okolicy nie wiedział, jak mu pomóc – więc nauczyła się sama. Dziś
+            Schronisko dla Bobrów Oli to zespół weterynarzy, biologów i wolontariuszy,
+            którzy każdego roku pomagają dziesiątkom zwierząt.
+          </p>
+          <p>
+            Bobry to prawdziwi inżynierowie przyrody. Ich tamy zatrzymują wodę w krajobrazie,
+            chronią przed suszą i tworzą siedliska dla ryb, płazów i ptaków. Pomagając bobrom,
+            pomagamy całym ekosystemom.
+          </p>
+        </div>
+        <ul class="feature-list">
+          <li>
+            <span class="icon" aria-hidden="true">🩺</span>
+            <div><h3>Opieka weterynaryjna</h3><p>Leczymy rany, infekcje i skutki potrąceń przez samochody.</p></div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">🍼</span>
+            <div><h3>Odchów sierot</h3><p>Karmimy i wychowujemy młode, które straciły rodziców.</p></div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">🌊</span>
+            <div><h3>Powrót na wolność</h3><p>Przygotowujemy bobry do życia w naturze i wypuszczamy je w bezpiecznych miejscach.</p></div>
+          </li>
+          <li>
+            <span class="icon" aria-hidden="true">📚</span>
+            <div><h3>Edukacja</h3><p>Prowadzimy zajęcia dla szkół i uczymy, jak żyć z bobrami w zgodzie.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PODOPIECZNI -->
+    <section id="podopieczni" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Nasi podopieczni</p>
+          <h2>Poznaj bobry, które teraz u nas mieszkają</h2>
+          <p>Każdy z nich ma swoją historię. Możesz zostać wirtualnym opiekunem wybranego bobra.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtruj podopiecznych">
+          <button class="chip is-active" data-filter="all">Wszystkie</button>
+          <button class="chip" data-filter="leczenie">W leczeniu</button>
+          <button class="chip" data-filter="mlode">Młode</button>
+          <button class="chip" data-filter="gotowe">Gotowe do wypuszczenia</button>
+        </div>
+
+        <div class="cards">
+          <article class="card" data-tags="leczenie">
+            <div class="card-img" style="--bg:#f3dfc6"><img src="assets/logo.svg" alt="Ilustracja bobra Kazika"></div>
+            <div class="card-body">
+              <h3>Kazik</h3>
+              <p class="meta">Samiec · ok. 4 lata</p>
+              <p>Trafił do nas z raną łapy po spotkaniu z sidłami. Dzielnie znosi opatrunki i uwielbia korę wierzby.</p>
+              <span class="badge badge-orange">W leczeniu</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="mlode">
+            <div class="card-img" style="--bg:#e0ecd9"><img src="assets/logo.svg" alt="Ilustracja bobra Zosi"></div>
+            <div class="card-body">
+              <h3>Zosia</h3>
+              <p class="meta">Samica · 3 miesiące</p>
+              <p>Osierocona po wiosennej powodzi. Karmiona co kilka godzin – rośnie jak na drożdżach!</p>
+              <span class="badge badge-green">Młode</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="gotowe">
+            <div class="card-img" style="--bg:#dbe9ee"><img src="assets/logo.svg" alt="Ilustracja bobra Bolka"></div>
+            <div class="card-body">
+              <h3>Bolek</h3>
+              <p class="meta">Samiec · ok. 2 lata</p>
+              <p>Po potrąceniu przez samochód przeszedł długą rehabilitację. Już niedługo wraca nad Wartę.</p>
+              <span class="badge badge-blue">Gotowy do wypuszczenia</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="mlode leczenie">
+            <div class="card-img" style="--bg:#f6e7c8"><img src="assets/logo.svg" alt="Ilustracja bobra Pestki"></div>
+            <div class="card-body">
+              <h3>Pestka</h3>
+              <p class="meta">Samica · 5 miesięcy</p>
+              <p>Najmniejsza w schronisku, ale z największym charakterem. Leczymy jej infekcję oczu.</p>
+              <span class="badge badge-green">Młode</span>
+              <span class="badge badge-orange">W leczeniu</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="gotowe">
+            <div class="card-img" style="--bg:#e6e0f0"><img src="assets/logo.svg" alt="Ilustracja bobra Tadka"></div>
+            <div class="card-body">
+              <h3>Tadek</h3>
+              <p class="meta">Samiec · ok. 3 lata</p>
+              <p>Mistrz budowania tam – w naszym oczku wodnym wybudował już trzy! Gotowy na wolność.</p>
+              <span class="badge badge-blue">Gotowy do wypuszczenia</span>
+            </div>
+          </article>
+
+          <article class="card" data-tags="leczenie">
+            <div class="card-img" style="--bg:#f1dcd6"><img src="assets/logo.svg" alt="Ilustracja bobrzycy Meli"></div>
+            <div class="card-body">
+              <h3>Mela</h3>
+              <p class="meta">Samica · ok. 6 lat</p>
+              <p>Starsza dama z problemami zębów. Pod okiem weterynarza wraca do formy i do apetytu.</p>
+              <span class="badge badge-orange">W leczeniu</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAK POMÓC -->
+    <section id="pomoc" class="section">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Jak pomóc</p>
+          <h2>Każda pomoc ma znaczenie</h2>
+          <p>Schronisko utrzymuje się dzięki ludziom o wielkim sercu. Wybierz sposób, który jest dla Ciebie najlepszy.</p>
+        </div>
+
+        <div class="help-grid">
+          <div class="help-card">
+            <span class="icon-lg" aria-hidden="true">💛</span>
+            <h3>Darowizna</h3>
+            <p>Twoja wpłata to karma, leki i opieka weterynaryjna dla naszych podopiecznych.</p>
+            <div class="amounts" role="group" aria-label="Wybierz kwotę darowizny">
+              <button class="amount" data-amount="20">20 zł</button>
+              <button class="amount is-active" data-amount="50">50 zł</button>
+              <button class="amount" data-amount="100">100 zł</button>
+            </div>
+            <p class="amount-info" aria-live="polite">50 zł to tygodniowy zapas świeżych gałązek dla jednego bobra.</p>
+            <p class="small">Nr konta: <strong>00 0000 0000 0000 0000 0000 0000</strong><br>Tytuł: „Darowizna na bobry”</p>
+          </div>
+
+          <div class="help-card">
+            <span class="icon-lg" aria-hidden="true">🦫</span>
+            <h3>Wirtualna adopcja</h3>
+            <p>Wybierz swojego ulubieńca i wspieraj go co miesiąc. W zamian otrzymasz certyfikat opiekuna oraz zdjęcia i wieści z jego życia.</p>
+            <a href="#kontakt" class="btn btn-small">Adoptuj bobra</a>
+          </div>
+
+          <div class="help-card">
+            <span class="icon-lg" aria-hidden="true">🙌</span>
+            <h3>Wolontariat</h3>
+            <p>Pomóż przy karmieniu, sprzątaniu wybiegów, zbieraniu gałęzi lub przy wydarzeniach edukacyjnych.</p>
+            <a href="#kontakt" class="btn btn-small">Zgłoś się</a>
+          </div>
+
+          <div class="help-card">
+            <span class="icon-lg" aria-hidden="true">🎁</span>
+            <h3>Dary rzeczowe</h3>
+            <p>Zawsze potrzebujemy:</p>
+            <ul class="checklist">
+              <li>świeżych gałęzi wierzby i topoli</li>
+              <li>jabłek, marchwi i warzyw korzeniowych</li>
+              <li>ręczników i kocy</li>
+              <li>środków dezynfekujących</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3>Znalazłeś rannego bobra?</h3>
+            <p>Nie próbuj go łapać gołymi rękami – bobry mają bardzo silne zęby. Zachowaj odstęp, obserwuj zwierzę i zadzwoń do nas.</p>
+          </div>
+          <a class="btn btn-light" href="tel:+48000000000">📞 Telefon alarmowy: +48 000 000 000</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WIZYTY -->
+    <section id="wizyty" class="section section-alt">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Odwiedź nas</p>
+          <h2>Wizyty i zajęcia edukacyjne</h2>
+          <p>
+            Dbamy o spokój naszych podopiecznych, dlatego schronisko można odwiedzać
+            wyłącznie w małych grupach, z przewodnikiem i po wcześniejszej rezerwacji.
+          </p>
+          <p>
+            Dla szkół i przedszkoli przygotowaliśmy lekcje przyrody: dowiesz się, jak bobry
+            budują tamy, czym się żywią i dlaczego są tak ważne dla rzek.
+          </p>
+          <a href="#kontakt" class="btn">Zarezerwuj wizytę</a>
+        </div>
+        <div class="hours">
+          <h3>Godziny zwiedzania</h3>
+          <table>
+            <tbody>
+              <tr><th scope="row">Poniedziałek</th><td>nieczynne</td></tr>
+              <tr><th scope="row">Wtorek – piątek</th><td>10:00 – 16:00</td></tr>
+              <tr><th scope="row">Sobota</th><td>10:00 – 14:00</td></tr>
+              <tr><th scope="row">Niedziela</th><td>nieczynne</td></tr>
+            </tbody>
+          </table>
+          <p class="small">Bobry są najaktywniejsze o zmierzchu – raz w miesiącu organizujemy wieczorne spacery obserwacyjne.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container narrow">
+        <div class="section-head">
+          <p class="eyebrow">FAQ</p>
+          <h2>Najczęściej zadawane pytania</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Czy mogę pogłaskać bobra?</summary>
+            <p>Niestety nie. Nasi podopieczni to dzikie zwierzęta, które mają wrócić na wolność. Ograniczamy kontakt z ludźmi, żeby nie przyzwyczaiły się do nich.</p>
+          </details>
+          <details>
+            <summary>Co jedzą bobry?</summary>
+            <p>Bobry są roślinożercami. Latem jedzą rośliny zielne i wodne, a zimą głównie korę i gałązki drzew liściastych – najchętniej wierzby, topoli i osiki.</p>
+          </details>
+          <details>
+            <summary>Ile czasu bóbr spędza w schronisku?</summary>
+            <p>To zależy od stanu zdrowia. Dorosłe bobry po leczeniu wracają zwykle po kilku tygodniach, a osierocone młode zostają z nami nawet do dwóch lat, aż będą gotowe do samodzielnego życia.</p>
+          </details>
+          <details>
+            <summary>Czy bobry są w Polsce chronione?</summary>
+            <p>Bóbr europejski objęty jest w Polsce ochroną gatunkową częściową. Pomoc rannemu zwierzęciu najlepiej zostawić specjalistom – zadzwoń do nas lub do najbliższego ośrodka rehabilitacji zwierząt.</p>
+          </details>
+          <details>
+            <summary>Czy darowiznę można odliczyć od podatku?</summary>
+            <p>Szczegóły dotyczące odliczeń i przekazania 1,5% podatku podamy na prośbę – napisz do nas przez formularz kontaktowy.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section id="kontakt" class="section section-dark">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow eyebrow-light">Kontakt</p>
+          <h2>Napisz do nas</h2>
+          <p>Masz pytanie, chcesz zostać wolontariuszem albo zaadoptować bobra? Odezwij się!</p>
+          <ul class="contact-list">
+            <li><span aria-hidden="true">📍</span> ul. Bobrowa 1, 00-000 Nadrzecze</li>
+            <li><span aria-hidden="true">📞</span> <a href="tel:+48000000000">+48 000 000 000</a></li>
+            <li><span aria-hidden="true">✉️</span> <a href="mailto:kontakt@example.com">kontakt@example.com</a></li>
+          </ul>
+        </div>
+        <form class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Imię i nazwisko</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="email">E-mail</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field">
+            <label for="topic">Temat</label>
+            <select id="topic" name="topic">
+              <option>Pytanie ogólne</option>
+              <option>Wirtualna adopcja</option>
+              <option>Wolontariat</option>
+              <option>Rezerwacja wizyty</option>
+              <option>Zgłoszenie rannego bobra</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Wiadomość</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <label class="consent">
+            <input type="checkbox" name="consent" required>
+            <span>Wyrażam zgodę na przetwarzanie moich danych w celu odpowiedzi na wiadomość.</span>
+          </label>
+          <button type="submit" class="btn">Wyślij wiadomość</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="brand brand-footer">
+        <img src="assets/logo.svg" alt="" width="36" height="36">
+        <span>Schronisko dla Bobrów <strong>Oli</strong></span>
+      </div>
+      <p>© <span id="year">2026</span> Schronisko dla Bobrów Oli. Z miłością do bobrów.</p>
+      <a href="#start" class="to-top">Do góry ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
